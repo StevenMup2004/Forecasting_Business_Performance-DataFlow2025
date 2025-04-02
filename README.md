@@ -1,50 +1,52 @@
-# Dataflow 2025 Forecasting Business Performance
+# DataFlow 2025 - Forecasting Business Performance
 
-## Giới thiệu
-Đây là bài thi vòng 1 của cuộc thi DataFlow 2025, tập trung vào dự báo hiệu suất kinh doanh bằng các phương pháp phân tích dữ liệu và mô hình học máy. Dự án nhằm xây dựng một mô hình dự báo doanh thu và doanh số trong tương lai dựa trên dữ liệu lịch sử, giúp doanh nghiệp đưa ra các quyết định chiến lược chính xác hơn.
+## Overview
+This project is part of the first-round exam of the DataFlow 2025 competition. It focuses on forecasting business performance using data analysis and machine learning models. The goal is to develop an accurate predictive model for future revenue and sales based on historical data, aiding businesses in strategic decision-making.
 
-## Thành viên nhóm
-- **Vũ Hải Đăng**
-- **Phạm Văn Thanh**
-- **Nguyễn Minh Nhật**
+## Team Members
+- **Vũ Hải Đăng**  
+- **Phạm Văn Thanh**  
+- **Nguyễn Minh Nhật**  
 
-## Mục tiêu dự án
-- Phân tích dữ liệu lịch sử doanh thu và số lượng bán.
-- Trực quan hóa xu hướng doanh thu theo thời gian (năm, tháng, quý).
-- Xác định các yếu tố ảnh hưởng đến doanh thu như mùa vụ, khu vực, dòng sản phẩm.
-- Xây dựng mô hình LSTM, Transformer, Sarima để dự báo doanh thu.
-- Kiểm tra và đánh giá mô hình để tối ưu hóa kết quả dự báo.
+## Project Objectives
+- Analyze historical revenue and sales data.
+- Visualize revenue trends over time (yearly, monthly, quarterly).
+- Identify factors affecting revenue, such as seasonality, regions, and product lines.
+- Develop LSTM, Transformer, and SARIMA models for revenue forecasting.
+- Evaluate and optimize model performance to ensure accurate predictions.
 
-## Dữ liệu sử dụng
-Dữ liệu bao gồm:
-- Lịch sử doanh thu theo thời gian.
-- Thông tin về sản phẩm và khu vực bán hàng.
-- Các chỉ số kinh tế có thể ảnh hưởng đến hiệu suất kinh doanh.
+## Dataset
+The dataset includes:
+- Historical revenue data over time.
+- Product and sales region information.
+- Economic indicators impacting business performance.
 
-## Phương pháp tiếp cận
-1. **Tiền xử lý dữ liệu**
-   - Kiểm tra và làm sạch dữ liệu.
-   - Xử lý giá trị bị thiếu hoặc ngoại lệ.
-   - Chuẩn hóa dữ liệu bằng Min-Max Scaling.
-2. **Phân tích và trực quan hóa dữ liệu**
-   - Biểu đồ xu hướng theo năm, tháng, quý.
-   - So sánh doanh thu giữa các khu vực và dòng sản phẩm.
-3. **Xây dựng mô hình dự báo**
-   - Áp dụng mô hình LSTM + Transformer+ Sarima để dự báo chuỗi thời gian.
-   - Tích hợp embedding cho chỉ số tháng để cải thiện kết quả.
-4. **Đánh giá mô hình**
-   - Sử dụng các chỉ số RMSE, MAE , R^2 để đo lường hiệu suất.
-   - Kiểm tra độ ổn định và tính hợp lý của kết quả dự báo.
+## Methodology
+### 1. Data Preprocessing
+- Inspect and clean the dataset.
+- Handle missing values and outliers.
+- Normalize data using Min-Max Scaling.
 
-## Cách chạy mô hình
-1. File xử lý dữ liệu:
-   ```bash
+### 2. Data Analysis & Visualization
+- Generate trend charts by year, month, and quarter.
+- Compare revenue across different regions and product lines.
+
+### 3. Forecasting Model Development
+- Implement LSTM, Transformer, and SARIMA models for time series forecasting.
+- Integrate month-based embeddings to enhance prediction accuracy.
+
+### 4. Model Evaluation
+- Use RMSE, MAE, and R² metrics to assess performance.
+- Validate model stability and forecast reliability.
+
+## How to Run the Model
+1. Dataset:
+   ```
    FORECASTING BUSINESS PERFORMANCE.xlsx
    ```
-2. File code:
-   ```bash
+2. Run the Jupyter Notebook:
+   ```
    FORECASTING BUSINESS PERFORMANCE_TND2004.ipynb
    ```
-
 
 
